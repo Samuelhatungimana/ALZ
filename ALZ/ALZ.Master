@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ALZ.master.cs" Inherits="ALZ.ALZ.ALZ" %>
+
+<%@ Register Src="\alz\controls\Header.ascx" TagPrefix="uc1" TagName="Header" %>
+<%@ Register Src="\alz\controls\Footer.ascx" TagPrefix="uc1" TagName="Footer" %>
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Walk To End Alzheimer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link href="/ALZ/Scripts/Styles.css" rel="stylesheet" />
+
+    
+</head>
+<body>
+    <form id="form" runat="server">
+        
+        <uc1:Header runat="server" ID="Header" />
+     
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-1">
+                </div>
+                <div class =" col-10">
+
+                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+
+
+        
+    </form>
+
+
+    <uc1:Footer runat="server" ID="Footer" />
+</body>
+</html>
